@@ -1,0 +1,58 @@
+
+[
+  {
+    "slug": "founders-fireside-building-in-2027",
+    "title": "Founder's Fireside: Building in 2027",
+    "date": "2027-02-14",
+    "time": "6:50PM - 10:00PM",
+    "location": "The Grid SF, San Francisco, CA",
+    "status": "upcoming",
+    "category": "Startup Grind",
+    "format": "In-Person",
+    "capacity": 100,
+    "remaining": 100,
+    "description": "An intimate evening with startup builders, innovators, and founders discussing what comes next in community-led growth.",
+    "about": "Join us for an exclusive event at The Grid SF. Hear from founders and operators who are shaping business communities with meaningful networking, practical insights, and new partnerships.",
+    "agenda": [
+      { "time": "6:30 PM", "title": "Doors Open & Networking", "category": "Networking" },
+      { "time": "7:00 PM", "title": "Welcome Remarks", "category": "Talk" },
+      { "time": "7:15 PM", "title": "Fireside Chat: Building in 2027", "category": "Fireside" },
+      { "time": "8:00 PM", "title": "Audience Q&A", "category": "Q&A" },
+      { "time": "8:30 PM", "title": "Networking & Drinks", "category": "Networking" }
+    ],
+    "speakers": [
+      { "name": "Jordan Miller", "role": "CEO, Stealth", "bio": "Previously VP at AppMaster." },
+      { "name": "Priya Nair", "role": "Founder, CloudFlow AI", "bio": "Y Combinator W24." },
+      { "name": "Lee Zhang", "role": "Partner, RedVentures", "bio": "Leading Series A investments." }
+    ],
+    "tags": ["Startup Grind", "In-Person", "Networking"]
+  },
+  {
+    "slug": "innovate-web-lucknow-meetup-april-2025",
+    "title": "Innovate Web Lucknow Meetup | April 2025",
+    "date": "2025-04-27",
+    "time": "03:0PM - 6:00PM",
+    "location": "Summit Space- Coworking Office Space",
+    "status": "completed",
+    "category": "Workshop",
+    "format": "In-Person",
+    "capacity": 100,
+    "remaining": 0,
+    "description": "Building Fortresses: Practical Website Security for Modern Developers",
+    "about": "Dive deep into the latest in web development and digital marketing—right in the heart of the City of Nawabs!",
+    "agenda": [
+      { "time": "3:00 PM", "title": "Welcome & Registration", "category": "Registration" },
+      { "time": "3:15 PM", "title": "Lightning Talks", "category": "Talk" },
+      { "time": "3:30 PM", "title": "Building Fortresses: Practical Website Security for Modern Developers", "category": "Session" },
+      { "time": "4:30 PM", "title": "Networking Break", "category": "Break" },
+      { "time": "4:45 PM", "title": "Beyond the Grid: Crafting Visual Chaos with Intelligence and Imagination", "category": "Session" },
+      { "time": "5:15 PM", "title": "From Chaos to Clarity: Website Design Simplified", "category": "Session" },
+      { "time": "5:45 PM", "title": "Q&A and Closing Remarks", "category": "Closing Remarks" }
+    ],
+    "speakers": [
+      { "name": "Mina Park", "role": "AI Lead", "bio": "Built enterprise ML pipelines." },
+      { "name": "Carlos Vega", "role": "Data Scientist", "bio": "Specialized in computer vision." }
+    ],
+    "tags": ["Workshop", "In-Person", "AI"]
+  }
+]
