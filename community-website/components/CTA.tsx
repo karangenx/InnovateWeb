@@ -26,15 +26,15 @@ export default function CTA() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#020817]/90 via-[#0b1736]/60 to-transparent pointer-events-none" />
 
           {/* Content */}
-          <div className="absolute inset-0 flex items-center z-10">
+          <div className="absolute inset-0 flex items-center z-10 p-4 sm:p-8 md:p-16 lg:p-20">
             <div
-              className="ml-8 md:ml-16 lg:ml-20 max-w-[560px] bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-10 md:p-12 shadow-2xl relative overflow-hidden"
+              className="w-full max-w-[560px] bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-6 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
               
               {/* Heading */}
               <h2
-                className="mt-6 text-white text-[48px] md:text-[60px] font-bold leading-[1.1] tracking-tight"
+                className="mt-6 text-white text-4xl sm:text-[48px] md:text-[60px] font-bold leading-[1.1] tracking-tight"
               >
                 Join Our
                 <br />

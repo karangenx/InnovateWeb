@@ -53,7 +53,7 @@ export default function UpcomingEvents() {
           
           <Link
             href="/events"
-            className="group inline-flex items-center gap-2 bg-white text-slate-700 font-semibold px-6 py-3 rounded-full border border-slate-200 shadow-sm hover:shadow-md hover:border-cyan-300 hover:text-cyan-700 transition-all"
+            className="group inline-flex items-center justify-center gap-2 bg-white text-slate-700 font-semibold px-6 py-3 rounded-full border border-slate-200 shadow-sm hover:shadow-md hover:border-cyan-300 hover:text-cyan-700 transition-all w-full sm:w-fit"
           >
             Explore All Events
             <div className="w-6 h-6 rounded-full bg-cyan-50 flex items-center justify-center group-hover:bg-cyan-100 transition-colors">

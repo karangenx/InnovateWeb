@@ -45,6 +45,23 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
     .filter((item) => item.slug !== event.slug)
     .slice(0, 4);
 
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: event.title,
+          text: `Check out this event: ${event.title}`,
+          url: window.location.href,
+        });
+      } catch (error) {
+        console.error("Error sharing:", error);
+      }
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      alert("Link copied to clipboard!");
+    }
+  };
+
   return (
     <main className="bg-[#f8fafc] text-slate-900 selection:bg-cyan-200 selection:text-cyan-900">
       {/* Premium Hero Section */}
@@ -192,7 +209,10 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </button>
                   )}
-                  <button className="w-full py-4 rounded-full bg-white text-slate-700 font-bold border-2 border-slate-100 hover:border-cyan-200 hover:text-cyan-700 transition-all duration-300 flex items-center justify-center gap-2">
+                  <button 
+                    onClick={handleShare}
+                    className="w-full py-4 rounded-full bg-white text-slate-700 font-bold border-2 border-slate-100 hover:border-cyan-200 hover:text-cyan-700 transition-all duration-300 flex items-center justify-center gap-2"
+                  >
                     <Share2 size={18} />
                     Share Event
                   </button>

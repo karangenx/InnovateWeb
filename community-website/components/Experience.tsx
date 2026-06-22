@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Check } from "lucide-react";
 
 
@@ -21,12 +22,12 @@ export default function Experience() {
           >
             {/* Blur Stat Card */}
             <div
-              className="absolute top-12 -left-5 md:-left-10 z-20 w-[120px] h-[120px] rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.3)] flex flex-col items-center justify-center transform hover:scale-105 transition-transform"
+              className="absolute top-8 -left-3 md:top-12 md:-left-10 z-20 w-[90px] h-[90px] md:w-[120px] md:h-[120px] rounded-2xl md:rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.3)] flex flex-col items-center justify-center transform hover:scale-105 transition-transform"
             >
-              <h3 className="text-4xl font-bold text-white tracking-tight">
+              <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight">
                 350+
               </h3>
-              <p className="text-sm font-medium text-cyan-200 mt-1">
+              <p className="text-xs md:text-sm font-medium text-cyan-200 md:mt-1">
                 Events
               </p>
             </div>
@@ -90,11 +91,12 @@ export default function Experience() {
               ))}
             </div>
 
-            <button
-              className="mt-12 px-8 py-4 rounded-full bg-white hover:bg-[#f8fafc] text-[#0b1736] font-semibold text-sm transition-all shadow-lg shadow-black/10 hover:shadow-black/20 hover:-translate-y-[1px]"
+            <Link
+              href="/events"
+              className="inline-block mt-12 px-8 py-4 rounded-full bg-white hover:bg-[#f8fafc] text-[#0b1736] font-semibold text-sm transition-all shadow-lg shadow-black/10 hover:shadow-black/20 hover:-translate-y-[1px]"
             >
               Join The Fun
-            </button>
+            </Link>
           </div>
         </div>
       </div>
