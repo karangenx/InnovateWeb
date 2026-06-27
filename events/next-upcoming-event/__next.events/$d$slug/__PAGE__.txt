@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[1528,["/_next/static/chunks/2bjjk1pwm0eu_.js","/_next/static/chunks/34-a798_dxl7r.js","/_next/static/chunks/2-7m_q89g91bd.js","/_next/static/chunks/0g2t--wzh8sum.js"],"default"]
+3:I[82348,["/_next/static/chunks/2bjjk1pwm0eu_.js","/_next/static/chunks/34-a798_dxl7r.js","/_next/static/chunks/2-7m_q89g91bd.js","/_next/static/chunks/0g2t--wzh8sum.js"],"default"]
+4:I[71337,["/_next/static/chunks/2bjjk1pwm0eu_.js","/_next/static/chunks/34-a798_dxl7r.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","$L3",null,{"event":{"slug":"next-upcoming-event","title":"Next Event - Planning in Progress","date":"TBD","time":"TBD","location":"Venue to be announced very soon","status":"upcoming","category":"Meetup","format":"TBD","capacity":0,"remaining":0,"description":"We currently are under planning our next upcoming event the event date and venue announce very soon.","about":"We currently are under planning our next upcoming event the event date and venue announce very soon.","agenda":[],"speakers":[],"tags":["Upcoming"]}}]],[["$","script","script-0",{"src":"/_next/static/chunks/2-7m_q89g91bd.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0g2t--wzh8sum.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"QIyHXONcOdxnwXsQbpEYz"}
+6:null
