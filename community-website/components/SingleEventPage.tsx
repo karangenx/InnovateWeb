@@ -32,6 +32,7 @@ export type EventItem = {
 };
 
 function formatDate(value: string) {
+  if (value === "TBD") return "TBD";
   return new Intl.DateTimeFormat("en-US", {
     weekday: "long",
     month: "long",
@@ -257,7 +258,7 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
                   <div className="mt-auto flex flex-col gap-3">
                     <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
                       <CalendarDays size={14} className="text-slate-400" />
-                      <span>{new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric" }).format(new Date(item.date))}</span>
+                      <span>{item.date === "TBD" ? "TBD" : new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric" }).format(new Date(item.date))}</span>
                     </div>
                     <div className="flex items-center justify-between mt-4">
                       <span className="rounded-full bg-slate-200/50 px-4 py-2 text-xs font-bold text-slate-700 group-hover:bg-cyan-50 group-hover:text-cyan-700 transition-colors">

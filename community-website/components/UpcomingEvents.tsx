@@ -75,10 +75,10 @@ export default function UpcomingEvents() {
                 {/* Date Badge */}
                 <div className="shrink-0 w-full sm:w-[110px] flex sm:flex-col items-center justify-center p-4 bg-slate-50 border border-slate-100 rounded-[20px] group-hover:bg-cyan-500 group-hover:border-cyan-500 transition-all duration-300">
                   <span className="text-3xl font-extrabold text-slate-800 group-hover:text-white transition-colors">
-                    {new Date(item.date).getDate()}
+                    {item.date === "TBD" ? "?" : new Date(item.date).getDate()}
                   </span>
                   <span className="text-xs font-bold uppercase tracking-widest text-slate-500 mt-1 group-hover:text-cyan-100 transition-colors">
-                    {new Intl.DateTimeFormat("en-US", { month: "short" }).format(new Date(item.date))}
+                    {item.date === "TBD" ? "TBD" : new Intl.DateTimeFormat("en-US", { month: "short" }).format(new Date(item.date))}
                   </span>
                 </div>
 

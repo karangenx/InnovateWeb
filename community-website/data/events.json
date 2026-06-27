@@ -1,31 +1,21 @@
 
 [
   {
-    "slug": "founders-fireside-building-in-2027",
-    "title": "Founder's Fireside: Building in 2027",
-    "date": "2027-02-14",
-    "time": "6:50PM - 10:00PM",
-    "location": "The Grid SF, San Francisco, CA",
+    "slug": "next-upcoming-event",
+    "title": "Next Event - Planning in Progress",
+    "date": "TBD",
+    "time": "TBD",
+    "location": "Venue to be announced very soon",
     "status": "upcoming",
-    "category": "Startup Grind",
-    "format": "In-Person",
-    "capacity": 100,
-    "remaining": 100,
-    "description": "An intimate evening with startup builders, innovators, and founders discussing what comes next in community-led growth.",
-    "about": "Join us for an exclusive event at The Grid SF. Hear from founders and operators who are shaping business communities with meaningful networking, practical insights, and new partnerships.",
-    "agenda": [
-      { "time": "6:30 PM", "title": "Doors Open & Networking", "category": "Networking" },
-      { "time": "7:00 PM", "title": "Welcome Remarks", "category": "Talk" },
-      { "time": "7:15 PM", "title": "Fireside Chat: Building in 2027", "category": "Fireside" },
-      { "time": "8:00 PM", "title": "Audience Q&A", "category": "Q&A" },
-      { "time": "8:30 PM", "title": "Networking & Drinks", "category": "Networking" }
-    ],
-    "speakers": [
-      { "name": "Jordan Miller", "role": "CEO, Stealth", "bio": "Previously VP at AppMaster." },
-      { "name": "Priya Nair", "role": "Founder, CloudFlow AI", "bio": "Y Combinator W24." },
-      { "name": "Lee Zhang", "role": "Partner, RedVentures", "bio": "Leading Series A investments." }
-    ],
-    "tags": ["Startup Grind", "In-Person", "Networking"]
+    "category": "Meetup",
+    "format": "TBD",
+    "capacity": 0,
+    "remaining": 0,
+    "description": "We currently are under planning our next upcoming event the event date and venue announce very soon.",
+    "about": "We currently are under planning our next upcoming event the event date and venue announce very soon.",
+    "agenda": [],
+    "speakers": [],
+    "tags": ["Upcoming"]
   },
   {
     "slug": "innovate-web-lucknow-meetup-april-2025",

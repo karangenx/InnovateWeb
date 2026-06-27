@@ -16,7 +16,6 @@ export default function Hero() {
         fill
         priority
         quality={100}
-        unoptimized
         className="object-cover object-center pointer-events-none -z-20"
       />
 
