@@ -6,27 +6,19 @@ import Navbar from "@/components/Navbar";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
-// Generate dummy data using existing images
-const galleryImages = [
-  { id: 1, src: "/images/gallery/g1.jpg", year: "2024" },
-  { id: 2, src: "/images/gallery/g2.jpg", year: "2024" },
-  { id: 3, src: "/images/gallery/g3.jpg", year: "2023" },
-  { id: 4, src: "/images/gallery/g4.jpg", year: "2023" },
-  { id: 5, src: "/images/gallery/g5.jpg", year: "2022" },
-  { id: 6, src: "/images/gallery/g6.jpg", year: "2022" },
-  { id: 7, src: "/images/gallery/g7.jpg", year: "2021" },
-  { id: 8, src: "/images/gallery/g8.jpg", year: "2021" },
-  { id: 9, src: "/images/gallery/g9.jpg", year: "2019" },
-  { id: 10, src: "/images/gallery/g1.jpg", year: "2019" },
-  { id: 11, src: "/images/gallery/g2.jpg", year: "2018" },
-  { id: 12, src: "/images/gallery/g3.jpg", year: "2018" },
-  { id: 13, src: "/images/gallery/g4.jpg", year: "2024" },
-  { id: 14, src: "/images/gallery/g5.jpg", year: "2023" },
-  { id: 15, src: "/images/gallery/g6.jpg", year: "2022" },
-  { id: 16, src: "/images/gallery/g7.jpg", year: "2021" },
-];
+import { galleryByYear } from "@/data/galleryData";
 
-const filters = ["All", "2024", "2023", "2022", "2021", "2019", "2018"];
+const galleryImages = Object.entries(galleryByYear)
+  .sort((a, b) => Number(b[0]) - Number(a[0]))
+  .flatMap(([year, images]) => {
+    return images.map((img, idx) => ({
+      id: `${year}-${idx}`,
+      src: `/images/gallery/${year}/${img}`,
+      year
+    }));
+  });
+
+const filters = ["All", ...Object.keys(galleryByYear).sort((a, b) => Number(b) - Number(a))];
 
 export default function GalleryPage() {
   const [activeYear, setActiveYear] = useState("All");
