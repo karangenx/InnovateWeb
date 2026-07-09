@@ -29,6 +29,7 @@ export type EventItem = {
   agenda: { time: string; title: string; category: string }[];
   speakers: { name: string; role: string; bio: string }[];
   tags: string[];
+  rsvpLink?: string;
 };
 
 function formatDate(value: string) {
@@ -200,10 +201,17 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
 
                 <div className="grid gap-3">
                   {event.status === 'upcoming' ? (
-                    <button className="w-full py-4 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 relative group overflow-hidden">
-                      <span className="relative z-10">RSVP Now - Free</span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </button>
+                    event.rsvpLink ? (
+                      <a href={event.rsvpLink} target="_blank" rel="noopener noreferrer" className="block w-full py-4 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 relative group overflow-hidden text-center">
+                        <span className="relative z-10">RSVP Now - Free</span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </a>
+                    ) : (
+                      <button className="w-full py-4 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 relative group overflow-hidden">
+                        <span className="relative z-10">RSVP Now - Free</span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </button>
+                    )
                   ) : (
                     <button className="w-full py-4 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 relative group overflow-hidden">
                       <span className="relative z-10">Watch Replay</span>
