@@ -36,7 +36,7 @@ export default function Gallery() {
           <div className="col-span-12 md:col-span-5 row-span-2 md:row-span-3 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
             <Image
-              src="/images/gallery/g1.jpg"
+              src="/images/gallery/g1.webp"
               alt="Gallery"
               width={1000}
               height={1200}
@@ -48,7 +48,7 @@ export default function Gallery() {
           <div className="col-span-12 md:col-span-5 row-span-2 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
             <Image
-              src="/images/gallery/g2.jpg"
+              src="/images/gallery/g2.webp"
               alt="Gallery"
               width={1000}
               height={700}
@@ -60,7 +60,7 @@ export default function Gallery() {
           <div className="col-span-6 md:col-span-2 row-span-1 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
             <Image
-              src="/images/gallery/g3.jpg"
+              src="/images/gallery/g3.webp"
               alt="Gallery"
               width={500}
               height={500}
@@ -72,7 +72,7 @@ export default function Gallery() {
           <div className="col-span-6 md:col-span-2 row-span-1 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
             <Image
-              src="/images/gallery/g4.jpg"
+              src="/images/gallery/g4.webp"
               alt="Gallery"
               width={500}
               height={500}
@@ -84,7 +84,7 @@ export default function Gallery() {
           <div className="col-span-12 md:col-span-5 row-span-1 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
             <Image
-              src="/images/gallery/g5.jpg"
+              src="/images/gallery/g5.webp"
               alt="Gallery"
               width={700}
               height={500}
@@ -96,7 +96,7 @@ export default function Gallery() {
           <div className="col-span-12 md:col-span-2 row-span-1 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
             <Image
-              src="/images/gallery/g6.jpg"
+              src="/images/gallery/g6.webp"
               alt="Gallery"
               width={500}
               height={500}
@@ -108,7 +108,7 @@ export default function Gallery() {
           <div className="col-span-12 md:col-span-6 row-span-2 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
             <Image
-              src="/images/gallery/g7.jpg"
+              src="/images/gallery/g7.webp"
               alt="Gallery"
               width={1200}
               height={800}
@@ -120,7 +120,7 @@ export default function Gallery() {
           <div className="col-span-12 md:col-span-6 row-span-2 overflow-hidden rounded-2xl group shadow-sm hover:shadow-xl transition-all duration-500 relative">
             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
             <Image
-              src="/images/gallery/g8.jpg"
+              src="/images/gallery/g8.webp"
               alt="Gallery"
               width={1200}
               height={800}

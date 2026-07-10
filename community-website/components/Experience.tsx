@@ -37,7 +37,7 @@ export default function Experience() {
               <div className="rounded-[2rem] overflow-hidden relative group">
                 <div className="absolute inset-0 bg-cyan-500/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
                 <Image
-                  src="/images/gallery/exp.jpg"
+                  src="/images/gallery/exp.webp"
                   alt="Experience"
                   width={900}
                   height={700}
