@@ -23,21 +23,21 @@ const filters = ["All", ...Object.keys(galleryByYear).sort((a, b) => Number(b) -
 export default function GalleryPage() {
   const [activeYear, setActiveYear] = useState("All");
 
-  const filteredImages = activeYear === "All" 
-    ? galleryImages 
+  const filteredImages = activeYear === "All"
+    ? galleryImages
     : galleryImages.filter(img => img.year === activeYear);
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
-      
+
       <main className="flex-grow pt-[104px]">
         {/* Gallery Hero Section */}
         <section className="relative w-full h-[500px] flex items-center justify-center px-6">
-          <Image 
-            src="/images/gallery/gmain.jpg" 
-            alt="Event Directory Hero" 
-            fill 
+          <Image
+            src="/images/gallery/gmain.webp"
+            alt="Event Directory Hero"
+            fill
             quality={100}
             unoptimized
             className="object-cover z-0"
@@ -62,18 +62,17 @@ export default function GalleryPage() {
 
         {/* Filter & Grid Section */}
         <section className="py-16 md:py-24 px-6 md:px-12 max-w-[1400px] mx-auto">
-          
+
           {/* Filters */}
           <div className="flex flex-wrap justify-center gap-3 mb-16">
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveYear(filter)}
-                className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
-                  activeYear === filter
+                className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${activeYear === filter
                     ? "bg-[#0b1736] text-white shadow-md hover:-translate-y-0.5"
                     : "bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200"
-                }`}
+                  }`}
               >
                 {filter}
               </button>
@@ -83,8 +82,8 @@ export default function GalleryPage() {
           {/* Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {filteredImages.map((image, i) => (
-              <div 
-                key={`${image.id}-${i}`} 
+              <div
+                key={`${image.id}-${i}`}
                 className="relative aspect-square w-full rounded-xl overflow-hidden bg-slate-100 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500"
               >
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none"></div>
@@ -99,7 +98,7 @@ export default function GalleryPage() {
                 />
               </div>
             ))}
-            
+
             {/* Show empty state if filtering returns no results (though our dummy data shouldn't hit this) */}
             {filteredImages.length === 0 && (
               <div className="col-span-full py-20 text-center">
