@@ -117,9 +117,11 @@ export default function EventsPage() {
                       <span className="rounded bg-slate-100/80 px-2 py-1 text-[11px] font-bold uppercase tracking-wider text-slate-600">
                         {event.category}
                       </span>
-                      <span className="rounded bg-orange-50 px-2 py-1 text-[11px] font-bold uppercase tracking-wider text-orange-600 border border-orange-100">
-                        {event.format}
-                      </span>
+                      {event.format && event.format.toUpperCase() !== 'TBA' && (
+                        <span className="rounded bg-orange-50 px-2 py-1 text-[11px] font-bold uppercase tracking-wider text-orange-600 border border-orange-100">
+                          {event.format}
+                        </span>
+                      )}
                     </div>
 
                     <h3 className="text-xl md:text-2xl font-bold text-slate-900 leading-tight mb-4 group-hover:text-cyan-700 transition-colors line-clamp-2">

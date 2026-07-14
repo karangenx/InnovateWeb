@@ -1,30 +1,76 @@
-
 [
   {
     "slug": "next-upcoming-event",
     "title": "The AI Shift: AI for Business and Developers",
     "date": "2026-07-18",
-    "time": "10:00 AM - 1:00 PM",
+    "time": "4:00 PM - 7:00 PM",
     "location": "Cubispace, 2nd Floor, JSV Hyundai Building CP-53, near Engineering College Chauraha, Lucknow",
     "status": "upcoming",
     "category": "Meetup",
     "format": "TBA",
     "capacity": 100,
-    "remaining": 100,
+    "remaining": 98,
     "rsvpLink": "https://luma.com/m3fjzhkv",
     "description": "Join us for an exciting event covering AI for customer engagement, building AI applications, and AI productivity for modern teams.",
-    "about": "This upcoming event will feature sessions on AI-Powered Customer Engagement, Building AI Applications, and AI Productivity for Modern Teams. Venue, Date, and Speakers TBA.",
+    "about": "This upcoming event will feature sessions on AI-Powered Customer Engagement, Building AI Applications, and AI Productivity for Modern Teams.",
     "agenda": [
-      { "time": "10:00 AM", "title": "Registration & Networking", "category": "Registration" },
-      { "time": "10:20 AM", "title": "Welcome Address - The AI Shift: Why Every Business and Developer Should Care", "category": "Session" },
-      { "time": "10:30 AM", "title": "Session 1: AI-Powered Customer Engagement (For Small & Medium Businesses)", "category": "Session" },
-      { "time": "11:15 AM", "title": "Tea Break & Networking", "category": "Break" },
-      { "time": "11:30 AM", "title": "Session 2: Building AI Applications (For Developers)", "category": "Session" },
-      { "time": "12:15 PM", "title": "Session 3: AI Productivity for Modern Teams", "category": "Session" },
-      { "time": "12:40 PM", "title": "Community Q&A, Open Discussion & Networking", "category": "Q&A" }
+      {
+        "time": "4:00 PM",
+        "title": "Registration & Networking",
+        "category": "Registration"
+      },
+      {
+        "time": "4:20 PM",
+        "title": "Welcome Address - The AI Shift: Why Every Business and Developer Should Care",
+        "category": "Session"
+      },
+      {
+        "time": "4:30 PM",
+        "title": "Session 1: AI-Powered Customer Engagement (For Small & Medium Businesses)",
+        "category": "Session"
+      },
+      {
+        "time": "5:15 PM",
+        "title": "Tea Break & Networking",
+        "category": "Break"
+      },
+      {
+        "time": "5:30 PM",
+        "title": "Session 2: AI-Driven Business Automation for Success",
+        "category": "Session"
+      },
+      {
+        "time": "6:15 PM",
+        "title": "Session 3: AI Productivity for Modern Teams",
+        "category": "Session"
+      },
+      {
+        "time": "6:40 PM",
+        "title": "Community Q&A, Open Discussion & Networking",
+        "category": "Q&A"
+      }
     ],
-    "speakers": [],
-    "tags": ["Upcoming", "AI", "Business", "Developers"]
+    "speakers": [
+      {
+        "name": "Vipin Singh",
+        "role": "Founder, Gen X Web Hosting",
+        "bio": "Speaker for Session 1: AI-Powered Customer Engagement (For Small & Medium Businesses).",
+        "image": "/images/speakers/vipin-singh.png"
+      },
+      {
+        "name": "Akshay Mishra",
+        "role": "Founder, Nowgray.com",
+        "bio": "Speaker for Session 2: AI-Driven Business Automation for Success.",
+        "image": "/images/speakers/akshay-mishra.jpg"
+      }
+    ],
+    "coverImage": "/images/events/upcoming-event-cover.png",
+    "tags": [
+      "Upcoming",
+      "AI",
+      "Business",
+      "Developers"
+    ]
   },
   {
     "slug": "innovate-web-lucknow-meetup-april-2025",
@@ -40,19 +86,59 @@
     "description": "Building Fortresses: Practical Website Security for Modern Developers",
     "about": "Dive deep into the latest in web development and digital marketing—right in the heart of the City of Nawabs!",
     "agenda": [
-      { "time": "3:00 PM", "title": "Welcome & Registration", "category": "Registration" },
-      { "time": "3:15 PM", "title": "Lightning Talks", "category": "Talk" },
-      { "time": "3:30 PM", "title": "Building Fortresses: Practical Website Security for Modern Developers", "category": "Session" },
-      { "time": "4:30 PM", "title": "Networking Break", "category": "Break" },
-      { "time": "4:45 PM", "title": "Beyond the Grid: Crafting Visual Chaos with Intelligence and Imagination", "category": "Session" },
-      { "time": "5:15 PM", "title": "From Chaos to Clarity: Website Design Simplified", "category": "Session" },
-      { "time": "5:45 PM", "title": "Q&A and Closing Remarks", "category": "Closing Remarks" }
+      {
+        "time": "3:00 PM",
+        "title": "Welcome & Registration",
+        "category": "Registration"
+      },
+      {
+        "time": "3:15 PM",
+        "title": "Lightning Talks",
+        "category": "Talk"
+      },
+      {
+        "time": "3:30 PM",
+        "title": "Building Fortresses: Practical Website Security for Modern Developers",
+        "category": "Session"
+      },
+      {
+        "time": "4:30 PM",
+        "title": "Networking Break",
+        "category": "Break"
+      },
+      {
+        "time": "4:45 PM",
+        "title": "Beyond the Grid: Crafting Visual Chaos with Intelligence and Imagination",
+        "category": "Session"
+      },
+      {
+        "time": "5:15 PM",
+        "title": "From Chaos to Clarity: Website Design Simplified",
+        "category": "Session"
+      },
+      {
+        "time": "5:45 PM",
+        "title": "Q&A and Closing Remarks",
+        "category": "Closing Remarks"
+      }
     ],
     "speakers": [
-      { "name": "Mina Park", "role": "AI Lead", "bio": "Built enterprise ML pipelines." },
-      { "name": "Carlos Vega", "role": "Data Scientist", "bio": "Specialized in computer vision." }
+      {
+        "name": "Mina Park",
+        "role": "AI Lead",
+        "bio": "Built enterprise ML pipelines."
+      },
+      {
+        "name": "Carlos Vega",
+        "role": "Data Scientist",
+        "bio": "Specialized in computer vision."
+      }
     ],
-    "tags": ["Workshop", "In-Person", "AI"]
+    "tags": [
+      "Workshop",
+      "In-Person",
+      "AI"
+    ]
   },
   {
     "slug": "innovate-web-lucknow-meetup-2024",
@@ -68,22 +154,74 @@
     "description": "An engaging meetup covering no-code platforms, high availability strategies, lead tracking automation, and page builder optimization.",
     "about": "Mark Your Calendars for 20 October 2024. Venue: My Place Coworking, Hazratganj, 5, Jopling Rd, Parehta, Gokhale Vihar, Butler Colony, Lucknow, Uttar Pradesh 226001. For More updates please join our WhatsApp Group: https://chat.whatsapp.com/FdgrzrNyrNYA2txiquCDji",
     "agenda": [
-      { "time": "2:30 PM", "title": "Welcome & Registration", "category": "Registration" },
-      { "time": "2:45 PM", "title": "Lightning Talks", "category": "Talk" },
-      { "time": "3:00 PM", "title": "Building the Future: Unlocking Website Development with No-Code Platforms", "category": "Session" },
-      { "time": "3:40 PM", "title": "Zero Downtime Web Apps: Contrasting Traditional and Modern HA Strategies", "category": "Session" },
-      { "time": "5:00 PM", "title": "Networking & Collaboration Time", "category": "Break" },
-      { "time": "5:10 PM", "title": "Effortless Lead Tracking Automation for WordPress, Google & Meta Ads", "category": "Session" },
-      { "time": "5:30 PM", "title": "Utilizing Page Builders Effectively to Optimize Your Website Appearance & Performance", "category": "Session" },
-      { "time": "6:00 PM", "title": "Q&A and Closing", "category": "Closing Remarks" }
+      {
+        "time": "2:30 PM",
+        "title": "Welcome & Registration",
+        "category": "Registration"
+      },
+      {
+        "time": "2:45 PM",
+        "title": "Lightning Talks",
+        "category": "Talk"
+      },
+      {
+        "time": "3:00 PM",
+        "title": "Building the Future: Unlocking Website Development with No-Code Platforms",
+        "category": "Session"
+      },
+      {
+        "time": "3:40 PM",
+        "title": "Zero Downtime Web Apps: Contrasting Traditional and Modern HA Strategies",
+        "category": "Session"
+      },
+      {
+        "time": "5:00 PM",
+        "title": "Networking & Collaboration Time",
+        "category": "Break"
+      },
+      {
+        "time": "5:10 PM",
+        "title": "Effortless Lead Tracking Automation for WordPress, Google & Meta Ads",
+        "category": "Session"
+      },
+      {
+        "time": "5:30 PM",
+        "title": "Utilizing Page Builders Effectively to Optimize Your Website Appearance & Performance",
+        "category": "Session"
+      },
+      {
+        "time": "6:00 PM",
+        "title": "Q&A and Closing",
+        "category": "Closing Remarks"
+      }
     ],
     "speakers": [
-      { "name": "Prakhar Tiwari", "role": "CTO at Ampwake Group", "bio": "" },
-      { "name": "Vipin Singh", "role": "CEO & Founder of Gen X Web Hosting", "bio": "" },
-      { "name": "Akriti Soni", "role": "Digital Marketing Executive at Dbuzzz", "bio": "" },
-      { "name": "Saurabh Mishra", "role": "WordPress Developer & Product Manager at Dbuzzz", "bio": "" }
+      {
+        "name": "Prakhar Tiwari",
+        "role": "CTO at Ampwake Group",
+        "bio": ""
+      },
+      {
+        "name": "Vipin Singh",
+        "role": "CEO & Founder of Gen X Web Hosting",
+        "bio": ""
+      },
+      {
+        "name": "Akriti Soni",
+        "role": "Digital Marketing Executive at Dbuzzz",
+        "bio": ""
+      },
+      {
+        "name": "Saurabh Mishra",
+        "role": "WordPress Developer & Product Manager at Dbuzzz",
+        "bio": ""
+      }
     ],
-    "tags": ["Meetup", "In-Person", "Tech"]
+    "tags": [
+      "Meetup",
+      "In-Person",
+      "Tech"
+    ]
   },
   {
     "slug": "elevate-your-digital-game-meetup-2023",
@@ -99,19 +237,60 @@
     "description": "Learn effective strategies to boost your website traffic significantly, craft result-driven meta ads, and unlock the power of Node.js modules.",
     "about": "Elevate Your Digital Game: Node.JS and Digital Marketing Strategies Meetup at 10th Floor, Summit Spaces, Gomti Nagar.",
     "agenda": [
-      { "time": "3:00 PM", "title": "Registration and Welcome", "category": "Registration" },
-      { "time": "3:15 PM", "title": "How to Attract 25,000 Visitors per Month", "category": "Session" },
-      { "time": "4:00 PM", "title": "Networking Break", "category": "Break" },
-      { "time": "4:15 PM", "title": "Tools that Help You to Craft Result-Driven Meta Ads", "category": "Session" },
-      { "time": "4:30 PM", "title": "Unlocking the Power of Node.js Modules", "category": "Session" },
-      { "time": "5:00 PM", "title": "Q&A and Closing", "category": "Closing Remarks" }
+      {
+        "time": "3:00 PM",
+        "title": "Registration and Welcome",
+        "category": "Registration"
+      },
+      {
+        "time": "3:15 PM",
+        "title": "How to Attract 25,000 Visitors per Month",
+        "category": "Session"
+      },
+      {
+        "time": "4:00 PM",
+        "title": "Networking Break",
+        "category": "Break"
+      },
+      {
+        "time": "4:15 PM",
+        "title": "Tools that Help You to Craft Result-Driven Meta Ads",
+        "category": "Session"
+      },
+      {
+        "time": "4:30 PM",
+        "title": "Unlocking the Power of Node.js Modules",
+        "category": "Session"
+      },
+      {
+        "time": "5:00 PM",
+        "title": "Q&A and Closing",
+        "category": "Closing Remarks"
+      }
     ],
     "speakers": [
-      { "name": "Himanshu Vadhwani", "role": "Founder & CEO, Dbuzzz", "bio": "" },
-      { "name": "Akriti Soni", "role": "Digital Marketing Executive, Dbuzzz", "bio": "" },
-      { "name": "Vivek Mishra", "role": "Sr. Full Stack Developer, Nowgray IT Solutions", "bio": "" }
+      {
+        "name": "Himanshu Vadhwani",
+        "role": "Founder & CEO, Dbuzzz",
+        "bio": ""
+      },
+      {
+        "name": "Akriti Soni",
+        "role": "Digital Marketing Executive, Dbuzzz",
+        "bio": ""
+      },
+      {
+        "name": "Vivek Mishra",
+        "role": "Sr. Full Stack Developer, Nowgray IT Solutions",
+        "bio": ""
+      }
     ],
-    "tags": ["Meetup", "In-Person", "Node.js", "Digital Marketing"]
+    "tags": [
+      "Meetup",
+      "In-Person",
+      "Node.js",
+      "Digital Marketing"
+    ]
   },
   {
     "slug": "digital-dynamo-meetup-php-roi",
@@ -127,16 +306,45 @@
     "description": "Dive deep into PHP best practices for web development and unlock the secrets of maximizing return on investment in your paid advertising campaigns.",
     "about": "Digital Dynamo Meetup focusing on PHP best practices and ROI with Paid Ads.",
     "agenda": [
-      { "time": "3:00 PM", "title": "Registration and Welcome", "category": "Registration" },
-      { "time": "3:15 PM", "title": "Session 1 - PHP Best Practices: Developing Secure, Efficient, and Maintainable Web Applications", "category": "Session" },
-      { "time": "4:00 PM", "title": "Networking Break", "category": "Break" },
-      { "time": "4:15 PM", "title": "Session 2 - Maximizing ROI with Paid Ads", "category": "Session" },
-      { "time": "5:00 PM", "title": "Q&A and Closing Remarks", "category": "Closing Remarks" }
+      {
+        "time": "3:00 PM",
+        "title": "Registration and Welcome",
+        "category": "Registration"
+      },
+      {
+        "time": "3:15 PM",
+        "title": "Session 1 - PHP Best Practices: Developing Secure, Efficient, and Maintainable Web Applications",
+        "category": "Session"
+      },
+      {
+        "time": "4:00 PM",
+        "title": "Networking Break",
+        "category": "Break"
+      },
+      {
+        "time": "4:15 PM",
+        "title": "Session 2 - Maximizing ROI with Paid Ads",
+        "category": "Session"
+      },
+      {
+        "time": "5:00 PM",
+        "title": "Q&A and Closing Remarks",
+        "category": "Closing Remarks"
+      }
     ],
     "speakers": [
-      { "name": "TBD", "role": "Speaker", "bio": "" }
+      {
+        "name": "TBD",
+        "role": "Speaker",
+        "bio": ""
+      }
     ],
-    "tags": ["Meetup", "In-Person", "PHP", "Digital Marketing"]
+    "tags": [
+      "Meetup",
+      "In-Person",
+      "PHP",
+      "Digital Marketing"
+    ]
   },
   {
     "slug": "future-forward-web-dev-digital-marketing",
@@ -152,21 +360,70 @@
     "description": "Engaging sessions on leveraging LinkedIn, HA strategies for web apps, and the future of Meta Ads.",
     "about": "Future Forward: Navigating Web Dev & Digital Marketing. Book Your Tickets: https://lu.ma/fiao617d",
     "agenda": [
-      { "time": "4:00 PM", "title": "Welcome & Registration", "category": "Registration" },
-      { "time": "4:20 PM", "title": "Lightning Talks", "category": "Talk" },
-      { "time": "4:30 PM", "title": "Session 1 - Leverage LinkedIn for Business Growth", "category": "Session" },
-      { "time": "5:10 PM", "title": "Session 2 - Zero Downtime Web Apps: Contrasting Traditional and Modern HA Strategies", "category": "Session" },
-      { "time": "6:00 PM", "title": "Networking & Collaboration Time", "category": "Break" },
-      { "time": "6:20 PM", "title": "Session 3 - The Future of Meta Ads: Leveraging AI and Automation for Growth", "category": "Session" },
-      { "time": "7:00 PM", "title": "Session 4 - (TBA)", "category": "Session" },
-      { "time": "7:40 PM", "title": "Q&A and Closing", "category": "Closing Remarks" }
+      {
+        "time": "4:00 PM",
+        "title": "Welcome & Registration",
+        "category": "Registration"
+      },
+      {
+        "time": "4:20 PM",
+        "title": "Lightning Talks",
+        "category": "Talk"
+      },
+      {
+        "time": "4:30 PM",
+        "title": "Session 1 - Leverage LinkedIn for Business Growth",
+        "category": "Session"
+      },
+      {
+        "time": "5:10 PM",
+        "title": "Session 2 - Zero Downtime Web Apps: Contrasting Traditional and Modern HA Strategies",
+        "category": "Session"
+      },
+      {
+        "time": "6:00 PM",
+        "title": "Networking & Collaboration Time",
+        "category": "Break"
+      },
+      {
+        "time": "6:20 PM",
+        "title": "Session 3 - The Future of Meta Ads: Leveraging AI and Automation for Growth",
+        "category": "Session"
+      },
+      {
+        "time": "7:00 PM",
+        "title": "Session 4 - (TBA)",
+        "category": "Session"
+      },
+      {
+        "time": "7:40 PM",
+        "title": "Q&A and Closing",
+        "category": "Closing Remarks"
+      }
     ],
     "speakers": [
-      { "name": "Pranav Jha", "role": "Founder, AP Web World", "bio": "" },
-      { "name": "Vipin Singh", "role": "CEO & Founder, Gen X Web Hosting", "bio": "" },
-      { "name": "Himanshu Wadhwani", "role": "CEO & Founder, Dbuzzz", "bio": "" }
+      {
+        "name": "Pranav Jha",
+        "role": "Founder, AP Web World",
+        "bio": ""
+      },
+      {
+        "name": "Vipin Singh",
+        "role": "CEO & Founder, Gen X Web Hosting",
+        "bio": ""
+      },
+      {
+        "name": "Himanshu Wadhwani",
+        "role": "CEO & Founder, Dbuzzz",
+        "bio": ""
+      }
     ],
-    "tags": ["Meetup", "In-Person", "Web Dev", "Digital Marketing"]
+    "tags": [
+      "Meetup",
+      "In-Person",
+      "Web Dev",
+      "Digital Marketing"
+    ]
   },
   {
     "slug": "innovate-web-mumbai-meetup",
@@ -182,17 +439,55 @@
     "description": "Dive into strategies for boosting PHP performance, protecting your brand online, and maximizing ROI with paid ads.",
     "about": "Innovate Web Mumbai Meetup focusing on PHP Performance, Domain Names, and Paid Ads.",
     "agenda": [
-      { "time": "5:00 PM", "title": "Registration and Welcome", "category": "Registration" },
-      { "time": "5:15 PM", "title": "Session 1 - Optimizing PHP Performance: Tips for Speed and Scalability", "category": "Session" },
-      { "time": "6:00 PM", "title": "Networking Break", "category": "Break" },
-      { "time": "6:15 PM", "title": "Session 2 - Protecting Your Brand Online: Domain Names, Trademarks, and Digital Identity", "category": "Session" },
-      { "time": "7:00 PM", "title": "Q&A and Discussion", "category": "Q&A" },
-      { "time": "7:15 PM", "title": "Session 3 - Maximizing ROI with Paid Ads", "category": "Session" },
-      { "time": "8:00 PM", "title": "Closing Remarks and Networking", "category": "Closing Remarks" }
+      {
+        "time": "5:00 PM",
+        "title": "Registration and Welcome",
+        "category": "Registration"
+      },
+      {
+        "time": "5:15 PM",
+        "title": "Session 1 - Optimizing PHP Performance: Tips for Speed and Scalability",
+        "category": "Session"
+      },
+      {
+        "time": "6:00 PM",
+        "title": "Networking Break",
+        "category": "Break"
+      },
+      {
+        "time": "6:15 PM",
+        "title": "Session 2 - Protecting Your Brand Online: Domain Names, Trademarks, and Digital Identity",
+        "category": "Session"
+      },
+      {
+        "time": "7:00 PM",
+        "title": "Q&A and Discussion",
+        "category": "Q&A"
+      },
+      {
+        "time": "7:15 PM",
+        "title": "Session 3 - Maximizing ROI with Paid Ads",
+        "category": "Session"
+      },
+      {
+        "time": "8:00 PM",
+        "title": "Closing Remarks and Networking",
+        "category": "Closing Remarks"
+      }
     ],
     "speakers": [
-      { "name": "TBD", "role": "Speaker", "bio": "" }
+      {
+        "name": "TBD",
+        "role": "Speaker",
+        "bio": ""
+      }
     ],
-    "tags": ["Meetup", "In-Person", "PHP", "Digital Marketing", "Mumbai"]
+    "tags": [
+      "Meetup",
+      "In-Person",
+      "PHP",
+      "Digital Marketing",
+      "Mumbai"
+    ]
   }
 ]
