@@ -437,6 +437,24 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
         </div>
       </section>
 
+      {/* Mobile Sticky RSVP Button */}
+      {event.status === 'upcoming' && (
+        <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/80 backdrop-blur-xl border-t border-slate-200 z-40 lg:hidden shadow-[0_-10px_20px_rgb(0,0,0,0.05)]">
+          {remainingSeats > 0 ? (
+            <button 
+              onClick={() => setShowModal(true)} 
+              className="w-full py-3.5 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all active:scale-[0.98]"
+            >
+              RSVP Now - Free
+            </button>
+          ) : (
+            <button disabled className="w-full py-3.5 rounded-full bg-slate-200 text-slate-500 font-bold text-lg cursor-not-allowed">
+              Registration Full
+            </button>
+          )}
+        </div>
+      )}
+
       {/* RSVP Modal */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-sm">
