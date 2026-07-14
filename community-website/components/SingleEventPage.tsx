@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -55,6 +55,23 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
   const [errorMsg, setErrorMsg] = useState("");
   const [remainingSeats, setRemainingSeats] = useState(event.remaining);
   const [isLoadingSeats, setIsLoadingSeats] = useState(true);
+  const [isMainRSVPVisible, setIsMainRSVPVisible] = useState(false);
+  const rsvpCardRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsMainRSVPVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (rsvpCardRef.current) {
+      observer.observe(rsvpCardRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     async function fetchSeatCount() {
@@ -311,7 +328,7 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
             </div>
 
             {/* Right Sticky Column */}
-            <aside className="lg:sticky lg:top-32 space-y-8">
+            <aside ref={rsvpCardRef} className="lg:sticky lg:top-32 space-y-8">
               {/* RSVP Card */}
               <div className="rounded-[2rem] border border-white bg-white p-8 shadow-[0_20px_60px_rgb(0,0,0,0.08)] relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-cyan-100 to-transparent rounded-bl-full pointer-events-none opacity-50" />
@@ -439,7 +456,7 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
 
       {/* Mobile Sticky RSVP Button */}
       {event.status === 'upcoming' && (
-        <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/80 backdrop-blur-xl border-t border-slate-200 z-40 lg:hidden shadow-[0_-10px_20px_rgb(0,0,0,0.05)]">
+        <div className={`fixed bottom-0 left-0 right-0 p-4 pb-6 z-40 lg:hidden transition-all duration-300 ${isMainRSVPVisible ? 'opacity-0 pointer-events-none translate-y-8' : 'opacity-100 translate-y-0'}`}>
           {remainingSeats > 0 ? (
             <button 
               onClick={() => setShowModal(true)} 
