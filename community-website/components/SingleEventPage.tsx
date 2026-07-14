@@ -456,16 +456,16 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
 
       {/* Mobile Sticky RSVP Button */}
       {event.status === 'upcoming' && (
-        <div className={`fixed bottom-0 left-0 right-0 p-4 pb-6 z-40 lg:hidden transition-all duration-300 ${isMainRSVPVisible ? 'opacity-0 pointer-events-none translate-y-8' : 'opacity-100 translate-y-0'}`}>
+        <div className={`fixed bottom-0 left-0 right-0 p-4 pb-6 z-40 lg:hidden flex justify-center transition-all duration-300 ${isMainRSVPVisible ? 'opacity-0 pointer-events-none translate-y-8' : 'opacity-100 translate-y-0'}`}>
           {remainingSeats > 0 ? (
             <button 
               onClick={() => setShowModal(true)} 
-              className="w-full py-3.5 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all active:scale-[0.98]"
+              className="px-12 py-3.5 rounded-full bg-cyan-400 text-slate-950 font-extrabold text-lg shadow-[0_8px_30px_rgba(34,211,238,0.4)] border border-cyan-300/50 hover:bg-cyan-300 hover:shadow-[0_12px_40px_rgba(34,211,238,0.6)] transition-all active:scale-[0.98]"
             >
               RSVP Now - Free
             </button>
           ) : (
-            <button disabled className="w-full py-3.5 rounded-full bg-slate-200 text-slate-500 font-bold text-lg cursor-not-allowed">
+            <button disabled className="px-12 py-3.5 rounded-full bg-slate-800 text-slate-400 font-bold text-lg border border-slate-700 shadow-xl cursor-not-allowed">
               Registration Full
             </button>
           )}
