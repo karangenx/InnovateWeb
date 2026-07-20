@@ -53,8 +53,8 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
-  const [remainingSeats, setRemainingSeats] = useState(event.remaining);
-  const [isLoadingSeats, setIsLoadingSeats] = useState(true);
+  const [remainingSeats, setRemainingSeats] = useState(event.status === 'completed' ? 0 : event.remaining);
+  const [isLoadingSeats, setIsLoadingSeats] = useState(event.status !== 'completed');
   const [isMainRSVPVisible, setIsMainRSVPVisible] = useState(false);
   const rsvpCardRef = useRef<HTMLElement>(null);
 
@@ -74,6 +74,8 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
   }, []);
 
   useEffect(() => {
+    if (event.status === 'completed') return;
+    
     async function fetchSeatCount() {
       try {
         const { data: count, error } = await supabase.rpc('get_rsvp_count', { slug_param: event.slug });
@@ -90,7 +92,7 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
       }
     }
     fetchSeatCount();
-  }, [event.slug, event.capacity]);
+  }, [event.slug, event.capacity, event.status]);
 
   const handleRSVPSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -369,7 +371,7 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
                 </div>
 
                 <div className="grid gap-3">
-                  {event.status === 'upcoming' ? (
+                  {event.status === 'upcoming' && (
                     remainingSeats > 0 ? (
                       <button onClick={() => setShowModal(true)} className="w-full py-4 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 relative group overflow-hidden">
                         <span className="relative z-10">RSVP Now - Free</span>
@@ -380,11 +382,6 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
                         Registration Full
                       </button>
                     )
-                  ) : (
-                    <button className="w-full py-4 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 relative group overflow-hidden">
-                      <span className="relative z-10">Watch Replay</span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </button>
                   )}
                   <button 
                     onClick={handleShare}
