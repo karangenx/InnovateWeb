@@ -124,14 +124,19 @@
     ],
     "speakers": [
       {
-        "name": "Mina Park",
-        "role": "AI Lead",
-        "bio": "Built enterprise ML pipelines."
+        "name": "Vipin Singh",
+        "role": "CEO & Founder at Gen X Web Hosting",
+        "bio": ""
       },
       {
-        "name": "Carlos Vega",
-        "role": "Data Scientist",
-        "bio": "Specialized in computer vision."
+        "name": "Divyanshu Sharma",
+        "role": "Creative Director and Co-Founder at GyaanGeeks",
+        "bio": ""
+      },
+      {
+        "name": "Akriti Soni",
+        "role": "Digital Marketing Executive at Dbuzzz",
+        "bio": ""
       }
     ],
     "tags": [
