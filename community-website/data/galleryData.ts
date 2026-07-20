@@ -61,5 +61,14 @@ export const galleryByYear = {
              ],
     "2018":  [
                  "highres_476439403.webp"
-             ]
+             ],
+    "2026": [
+        "WhatsApp Image 2026-07-18 at 10.23.17 PM.jpeg",
+        "WhatsApp Image 2026-07-18 at 10.23.22 PM.jpeg",
+        "WhatsApp Image 2026-07-18 at 10.23.24 PM.jpeg",
+        "WhatsApp Image 2026-07-18 at 10.23.25 PM.jpeg",
+        "WhatsApp Image 2026-07-18 at 9.42.05 PM.jpeg",
+        "WhatsApp Image 2026-07-18 at 9.42.06 PM (1).jpeg",
+        "WhatsApp Image 2026-07-18 at 9.42.13 PM.jpeg"
+    ]
 };
