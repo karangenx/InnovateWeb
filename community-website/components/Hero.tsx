@@ -16,7 +16,8 @@ export default function Hero() {
         fill
         priority
         quality={100}
-        className="object-cover object-center pointer-events-none -z-20"
+        style={{ objectFit: "cover", objectPosition: "center" }}
+        className="pointer-events-none -z-20"
       />
 
       {/* Overlay - lightened slightly to keep image visible and clear */}

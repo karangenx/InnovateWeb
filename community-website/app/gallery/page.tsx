@@ -40,7 +40,8 @@ export default function GalleryPage() {
             fill
             quality={100}
             unoptimized
-            className="object-cover z-0"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+            className="z-0"
             priority
           />
           {/* Subtle overlay for better text contrast if needed */}
