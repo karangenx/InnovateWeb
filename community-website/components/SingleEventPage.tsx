@@ -335,8 +335,10 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
               <div className="rounded-[2rem] border border-white bg-white p-8 shadow-[0_20px_60px_rgb(0,0,0,0.08)] relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-cyan-100 to-transparent rounded-bl-full pointer-events-none opacity-50" />
                 
-                <h3 className="text-2xl font-extrabold text-slate-900 mb-2">Reserve Your Spot</h3>
-                <p className="text-sm text-slate-500 mb-6">Join {event.capacity - remainingSeats} others attending this event.</p>
+                <h3 className="text-2xl font-extrabold text-slate-900 mb-2">{event.capacity === 0 ? "Event Details" : "Reserve Your Spot"}</h3>
+                <p className="text-sm text-slate-500 mb-6">
+                  {event.capacity === 0 ? "Join us for this virtual event." : `Join ${event.capacity - remainingSeats} others attending this event.`}
+                </p>
                 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
@@ -355,7 +357,9 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
                     <div>
                       <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Availability</p>
                       <p className="text-sm font-bold text-slate-800">
-                        {isLoadingSeats ? (
+                        {event.capacity === 0 ? (
+                          "Open to all"
+                        ) : isLoadingSeats ? (
                           <span className="flex items-center gap-2">
                             <Loader2 size={14} className="animate-spin text-cyan-600" />
                             Checking...
@@ -372,7 +376,11 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
 
                 <div className="grid gap-3">
                   {event.status === 'upcoming' && (
-                    remainingSeats > 0 ? (
+                    event.capacity === 0 ? (
+                      <div className="w-full py-4 rounded-full bg-emerald-50 text-emerald-600 font-bold text-center text-lg border border-emerald-200">
+                        Registration Not Required
+                      </div>
+                    ) : remainingSeats > 0 ? (
                       <button onClick={() => setShowModal(true)} className="w-full py-4 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 relative group overflow-hidden">
                         <span className="relative z-10">RSVP Now - Free</span>
                         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -454,7 +462,11 @@ export default function SingleEventPage({ event }: { event: EventItem }) {
       {/* Mobile Sticky RSVP Button */}
       {event.status === 'upcoming' && (
         <div className={`fixed bottom-0 left-0 right-0 p-4 pb-6 z-40 lg:hidden flex justify-center transition-all duration-300 ${isMainRSVPVisible ? 'opacity-0 pointer-events-none translate-y-8' : 'opacity-100 translate-y-0'}`}>
-          {remainingSeats > 0 ? (
+          {event.capacity === 0 ? (
+            <div className="px-12 py-3.5 rounded-full bg-emerald-50 text-emerald-600 font-bold text-lg border border-emerald-200 shadow-xl text-center w-full max-w-sm">
+              Registration Not Required
+            </div>
+          ) : remainingSeats > 0 ? (
             <button 
               onClick={() => setShowModal(true)} 
               className="px-12 py-3.5 rounded-full bg-cyan-400 text-slate-950 font-extrabold text-lg shadow-[0_8px_30px_rgba(34,211,238,0.4)] border border-cyan-300/50 hover:bg-cyan-300 hover:shadow-[0_12px_40px_rgba(34,211,238,0.6)] transition-all active:scale-[0.98]"

@@ -1,5 +1,48 @@
 [
   {
+    "slug": "ai-powered-web-2026",
+    "title": "The AI-Powered Web: What Changes in 2026?",
+    "date": "2026-09-12",
+    "time": "6:00 PM - 7:00 PM IST",
+    "location": "Virtual Meet (Link will be shared soon)",
+    "status": "upcoming",
+    "category": "Virtual Meetup",
+    "format": "Virtual Meet",
+    "capacity": 0,
+    "remaining": 0,
+    "description": "AI is rapidly changing how we build, discover, use, and manage the web. From AI-powered websites and autonomous agents to conversational commerce and AI-driven search, the traditional web experience is evolving faster than ever.",
+    "about": "In this 1-hour virtual meetup, we'll explore what the AI-powered web looks like in 2026, what technologies are driving the change, and what developers, WordPress professionals, agencies, freelancers, and businesses should be paying attention to.\n\nWhat we'll explore:\n- How AI is changing website development and user experiences\n- The impact of AI search and the changing role of SEO\n- AI agents and how they interact with websites and APIs\n- The rise of conversational commerce and AI-powered customer experiences\n- What developers and web professionals should start learning\n- Opportunities for businesses in the AI-powered web\n\nWhether you're a developer, designer, WordPress professional, freelancer, agency, or business owner, this session will help you understand where the web is heading—and how to prepare for it.\n\nJoin us for an hour of insights, examples, and discussion about the next evolution of the web.",
+    "agenda": [
+      {
+        "time": "6:00 PM",
+        "title": "Welcome & Introduction",
+        "category": "Welcome"
+      },
+      {
+        "time": "6:10 PM",
+        "title": "How AI is changing website development and user experiences",
+        "category": "Session"
+      },
+      {
+        "time": "6:25 PM",
+        "title": "AI agents, Search, and Conversational Commerce",
+        "category": "Session"
+      },
+      {
+        "time": "6:40 PM",
+        "title": "Opportunities & What to start learning",
+        "category": "Session"
+      },
+      {
+        "time": "6:50 PM",
+        "title": "Q&A and Discussion",
+        "category": "Q&A"
+      }
+    ],
+    "speakers": [],
+    "tags": ["AI", "Virtual", "Web Development"]
+  },
+  {
     "slug": "the-ai-shift-meetup-2026",
     "title": "The AI Shift: AI for Business and Developers",
     "date": "2026-07-18",
