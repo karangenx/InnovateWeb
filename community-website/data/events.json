@@ -1,5 +1,75 @@
 [
   {
+    "slug": "build-scale-and-ship-meetup",
+    "title": "Build, Scale & Ship: A Founders & Builders Meetup",
+    "date": "TBD",
+    "time": "4:00 PM - 7:30 PM",
+    "location": "Lucknow (Venue TBA)",
+    "status": "upcoming",
+    "category": "Meetup",
+    "format": "In-Person",
+    "capacity": 50,
+    "remaining": 50,
+    "description": "An exclusive meetup bringing together founders, developers, startup teams and technology builders to share ideas, showcase products, and build meaningful connections.",
+    "about": "For Founders • Developers • Startup Builders • Product Makers\n\nBuild. Scale. Ship.\n\nThe technology landscape is changing faster than ever. AI is transforming how products are built, developers are becoming entrepreneurs, and small teams are creating products that once required large engineering teams.\n\nBuild, Scale & Ship by Innovate Web is an exclusive meetup bringing together founders, developers, startup teams and technology builders under one roof to share ideas, showcase products, exchange experiences and build meaningful connections.\n\nThis isn't another conventional tech meetup. It's a room full of people who are actually building something.\n\nWhether you're launching your first startup, developing an AI product, scaling an existing SaaS business, working on an ambitious side project, or simply exploring your next big idea — this meetup is designed for you.\n\nWhat to Expect:\n\n🚀 Founder Stories — Hear directly from founders about their journey from idea to product to customers, including failures, challenges and decisions that don't usually make it onto a stage.\n\n💻 From Code to Product — A practical session for developers on turning technical skills into real products and businesses covering MVP development, architecture, APIs, infrastructure, technical debt and scaling.\n\n🤖 AI & The New Startup Stack — Explore how AI, automation, agents, APIs and emerging technologies are changing how startups build, operate and compete. The focus is on what builders can actually create today.\n\n🎙️ Founder × Developer Conversations — An open panel exploring entrepreneurship and engineering: Should founders learn to code? Should developers become founders? How much technology does a startup really need? What should you build vs buy?\n\n⚡ Show Us What You're Building — A fast-paced 3-minute builder showcase where developers and startup teams demonstrate what they're working on. No long presentations or complicated decks — just show us what you've built.\n\n🤝 Meaningful Networking — Meet founders looking for technical talent, developers looking for opportunities, and collaborators looking for partners and co-founders.\n\nWho Should Attend:\n• Startup founders and co-founders\n• Developers and engineers\n• Technical founders & SaaS builders\n• AI/ML developers & product makers\n• Freelancers building their own products & Indie hackers\n• Early-stage startup teams & anyone building a tech-driven business\n\nThe Builder's Room:\nEveryone attending is encouraged to introduce themselves through three simple questions: What are you building? What do you need? What can you help with?\n\nCome with an idea. Come with a product. Come with code. Or simply come with curiosity.",
+    "agenda": [
+      {
+        "time": "4:00 PM",
+        "title": "Registration & Networking",
+        "category": "Registration"
+      },
+      {
+        "time": "4:30 PM",
+        "title": "Welcome: The New Startup Stack",
+        "category": "Welcome"
+      },
+      {
+        "time": "4:40 PM",
+        "title": "Founder Story: Idea → Customer → Business",
+        "category": "Session"
+      },
+      {
+        "time": "5:05 PM",
+        "title": "From Code to Product",
+        "category": "Session"
+      },
+      {
+        "time": "5:30 PM",
+        "title": "AI & The New Startup Stack",
+        "category": "Session"
+      },
+      {
+        "time": "5:55 PM",
+        "title": "Founder × Developer Panel",
+        "category": "Panel"
+      },
+      {
+        "time": "6:25 PM",
+        "title": "Show Us What You're Building (3-Min Live Demos)",
+        "category": "Showcase"
+      },
+      {
+        "time": "6:45 PM",
+        "title": "Builder's Networking",
+        "category": "Networking"
+      },
+      {
+        "time": "7:00 PM",
+        "title": "Food, Drinks & Open Networking",
+        "category": "Networking"
+      }
+    ],
+    "speakers": [],
+    "tags": [
+      "Founders",
+      "Developers",
+      "Startups",
+      "AI",
+      "SaaS",
+      "In-Person"
+    ]
+  },
+  {
     "slug": "ai-powered-web-2026",
     "title": "The AI-Powered Web: What Changes in 2026?",
     "date": "2026-09-12",
