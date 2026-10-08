@@ -16,7 +16,7 @@ export default function Navbar() {
   const isHome = pathname === "/";
   const isEvents = pathname === "/events" || pathname.startsWith("/events/");
   const isGallery = pathname === "/gallery" || pathname.startsWith("/gallery/");
-  const isLightThemeRoute = pathname.startsWith("/contact") || pathname.startsWith("/gallery");
+  const isLightThemeRoute = pathname.startsWith("/contact") || pathname.startsWith("/gallery") || pathname.startsWith("/events/");
 
   const isLight = isScrolled || isLightThemeRoute;
 
